@@ -24,4 +24,7 @@ echo "----------------------------------------------------------"
 echo -e "${red}PLEASE SELECT PRINTER${nc}"
 read choose
 #echo "lpr $FILE -P ${array[$choose-1]}"
-lpr $FILE -P ${array[$choose-1]}
+
+#lpr $FILE -P ${array[$choose-1]}
+lpr $FILE -P ${array[$choose-1]} -o MediaType=ExtraHeavy -o Density=Density5
+
